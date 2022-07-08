@@ -1,0 +1,47 @@
+<h1>Formulario Handlebars</h1>
+
+{{!-- <form action="/api/productos" method="post"> --}}
+<form>
+
+    <div class="mt-1">
+        <label for="tittle" class="form-label">Tittle</label>
+        <input id="tittle" class="form-control" type="text" name="tittle">
+    </div>
+
+    <div class="mt-1">
+        <label for="price" class="form-label">Price</label>
+        <input id="price" class="form-control" type="number" name="price">
+    </div>
+
+    <div class="mt-1">
+        <label for="thumbnail" class="form-label">Thumbnail</label>
+        <input id="thumbnail" class="form-control" type="text" name="thumbnail">
+        
+    </div>
+    
+    {{!-- <button>Enviar</button> --}}
+
+    <div class="m-4 d-flex justify-content-center">
+        <button type="button" id="enviarForm" class="btn btn-warning ps-4 pe-4">Enviar</button>
+    </div>
+
+</form>
+
+    <div class="mt-4">
+
+        <table class="table table-dark table-striped-column">
+            <thead>
+                <tr>
+                <th scope="col">id</th>
+                <th scope="col">Tittle</th>
+                <th scope="col">Price</th>
+                <th scope="col">Thumbnail</th>
+                </tr>
+            </thead>
+            <tbody id="divProductos">
+
+            </tbody>
+            
+        </table>
+
+    </div>
