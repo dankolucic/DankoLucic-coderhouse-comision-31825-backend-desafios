@@ -9,7 +9,6 @@ import { usersRouter } from "./routers/usersRouter.js"
 import { authRouter } from "./routers/authRouter.js"
 import { dataRouter } from "./routers/dataRouter.js"
 import { viewsRouter } from "./routers/viewsRouter.js"
-import {mongodbContainer} from "./container/mongodbContainer.js"
 
 const app = express()
 
@@ -43,5 +42,3 @@ const PORT = 8080
 const server = app.listen(PORT, () => {
     console.log(`escuchando en el puerto ${server.address().port}`)
 })
-
-console.log(await mongodbContainer.getAllUsers())
