@@ -1,0 +1,34 @@
+{
+  "type": "module",
+  "name": "cluster-escalabilidad-proxy-nginx",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js ",
+  "scripts": {
+    "cluster": "nodemon server.js --watch --CLUSTER",
+    "start": "nodemon --watch server.js",
+    "ini_SQLite": "node database/SQL/config/table/SqliteTable.js",
+    "st": "npm run ini_mySQL && npm run ini_SQLite && node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autocannon": "^7.9.0",
+    "bcryptjs": "^2.4.3",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "express-handlebars": "^6.0.6",
+    "express-session": "^1.17.3",
+    "forever": "^4.0.3",
+    "handlebars": "^4.7.7",
+    "minimist": "^1.2.6",
+    "mongodb": "^4.8.1",
+    "nodemon": "^2.0.19",
+    "passport": "^0.6.0",
+    "passport-local": "^1.0.0",
+    "winston": "^3.8.1"
+  }
+}
